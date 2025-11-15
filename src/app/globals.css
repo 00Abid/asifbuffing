@@ -1,26 +1,162 @@
 @import "tailwindcss";
 
+/* ------------------------------------------
+   ASIF Buffing Works — Premium White Theme
+-------------------------------------------*/
+
+/* Brand Color Variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --base: #faf9fb; /* Premium White (Main Background) */
+  --base-secondary: #e8e5eb; /* Secondary White (Footer/Alt Sections) */
+  --logo: #2f1930; /* Logo Purple (Primary Brand) */
+  --accent: #d9cddd; /* Accent Soft Purple */
+  --neutral: #1c0e1a; /* Dark Neutral (Contrast Sections) */
+
+  --text-light: #ffffff;
+  --text-dark: #0e0e0e;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ------------------------------------------
+   BACKGROUND COLORS
+-------------------------------------------*/
+
+.bg-base {
+  background-color: var(--base);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.bg-base-secondary {
+  background-color: var(--base-secondary);
+}
+
+.bg-logo {
+  background-color: var(--logo);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.bg-neutral {
+  background-color: var(--neutral);
+}
+
+/* ------------------------------------------
+   TEXT COLORS
+-------------------------------------------*/
+
+.text-base {
+  color: var(--base);
+}
+
+.text-logo {
+  color: var(--logo);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-neutral {
+  color: var(--neutral);
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-dark {
+  color: var(--text-dark);
+}
+
+/* ------------------------------------------
+   BORDERS
+-------------------------------------------*/
+
+.border-base {
+  border-color: var(--base);
+}
+
+.border-logo {
+  border-color: var(--logo);
+}
+
+.border-accent {
+  border-color: var(--accent);
+}
+
+.border-neutral {
+  border-color: var(--neutral);
+}
+
+/* ------------------------------------------
+   BUTTONS
+-------------------------------------------*/
+
+/* Logo Purple Button (Primary CTA) */
+.btn-logo {
+  background: var(--logo);
+  color: var(--text-light);
+  padding: 0.6rem 1.3rem;
+  border-radius: 10px;
+  border: 1px solid var(--logo);
+  transition: 0.25s ease;
+}
+.btn-logo:hover {
+  background: #3a2342;
+}
+
+/* Accent Button */
+.btn-accent {
+  background: var(--accent);
+  color: var(--logo);
+  padding: 0.6rem 1.3rem;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  transition: 0.25s ease;
+}
+.btn-accent:hover {
+  background: #e5dde5;
+}
+
+/* Clean White Button (Secondary) */
+.btn-base {
+  background: var(--base);
+  color: var(--logo);
+  padding: 0.6rem 1.3rem;
+  border-radius: 10px;
+  border: 1px solid var(--logo);
+  transition: 0.25s ease;
+}
+.btn-base:hover {
+  background: #f2f0f2;
+}
+
+/* ------------------------------------------
+   CARDS
+-------------------------------------------*/
+.card {
+  background: var(--base);
+  border: 1px solid var(--accent);
+  padding: 1rem;
+  border-radius: 14px;
+  color: var(--text-dark);
+  box-shadow: 0 6px 20px rgba(47, 25, 48, 0.15);
+}
+
+/* ------------------------------------------
+   SLIDE-DOWN ANIMATION
+-------------------------------------------*/
+@keyframes slideDown {
+  from {
+    transform: translateY(-12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-slideDown {
+  animation: slideDown 0.25s ease-out;
 }
