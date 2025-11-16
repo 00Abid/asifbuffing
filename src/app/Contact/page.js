@@ -5,7 +5,7 @@ import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata = {
     title: "Contact Us - ASIF BUFFING WORKS | Get a Quote for Buffing Services",
-    description: "Contact ASIF BUFFING WORKS for professional utensil buffing services. Phone: +91-XXXXXXXXXX, Email: asifbuffingworks@gmail.com",
+    description: "Contact ASIF BUFFING WORKS for professional utensil buffing services. Phone: +91-XXXXXXXXXX, Email: rajabuffingworks02@gmail.com",
     keywords: "contact ASIF BUFFING WORKS, buffing services quote, utensil polishing contact",
     alternates: {
         canonical: 'https://asifbuffing.vercel.app/Contact',
@@ -60,7 +60,7 @@ export default function Contact() {
                                 "@type": "ContactPoint",
                                 "telephone": "+91-XXXXXXXXXX",
                                 "contactType": "Customer Service",
-                                "email": "asifbuffingworks@gmail.com",
+                                "email": "rajabuffingworks02@gmail.com",
                                 "areaServed": "IN",
                                 "availableLanguage": ["English", "Hindi", "Marathi"]
                             },

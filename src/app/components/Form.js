@@ -12,7 +12,7 @@ export default function Form() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const mailtoLink = `mailto:rajabuffing00@gmail.com?subject=New Message from ${name}&body=
+        const mailtoLink = `mailto:rajabuffingworks02@gmail.com?subject=New Message from ${name}&body=
 Name: ${name}%0D%0A
 Email: ${email}%0D%0A
 Message:%0D%0A

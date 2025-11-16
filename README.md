@@ -151,7 +151,7 @@ asifbuffingworks/
 
 ## 📧 Contact
 
-**Email:** rajabuffingworks00@gmail.com  
+**Email:** rajabuffingworks02@gmail.com  
 **Website:** https://asifbuffing.vercel.app
 
 ## 📄 License

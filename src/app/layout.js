@@ -99,7 +99,7 @@ export default function RootLayout({ children }) {
                 "@type": "ContactPoint",
                 "telephone": "+91-9096769473",
                 "contactType": "Customer Service",
-                "email": "asifbuffingworks@gmail.com",
+                "email": "rajabuffingworks02@gmail.com",
                 "areaServed": "IN",
                 "availableLanguage": ["English", "Hindi", "Marathi"]
               }
