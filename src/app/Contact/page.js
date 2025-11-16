@@ -1,6 +1,7 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Form from "../components/Form";
 import Breadcrumb from "../components/Breadcrumb";
+import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata = {
     title: "Contact Us - ASIF BUFFING WORKS | Get a Quote for Buffing Services",
@@ -18,6 +19,7 @@ export default function Contact() {
 
     return (
         <div className="pt-24 pb-16 bg-base">
+            <ScrollReveal />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Breadcrumb Schema */}
                 <script
@@ -80,10 +82,10 @@ export default function Contact() {
                 />
 
                 <Breadcrumb items={breadcrumbItems} />
-                <h1 className="text-3xl font-bold text-center mb-12 text-logo">
+                <h1 className="text-3xl font-bold text-center mb-12 text-logo scroll-fade-down">
                     Contact Us
                 </h1>
-                <p className="text-center text-dark mb-12 max-w-2xl mx-auto">
+                <p className="text-center text-dark mb-12 max-w-2xl mx-auto scroll-fade-up">
                     Have questions or need a quote? Reach out to ASIF BUFFING WORKS for expert buffing and polishing services. We&apos;re here to help!
                 </p>
 
@@ -94,7 +96,7 @@ export default function Contact() {
                     {/* Map + Contact Info */}
                     <div className="space-y-8">
                         {/* Map */}
-                        <div className="h-64 bg-neutral rounded-lg overflow-hidden shadow-2xl border border-logo">
+                        <div className="h-64 bg-neutral rounded-lg overflow-hidden shadow-2xl border border-logo scroll-flip-left">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.906425485513!2d72.86733587467342!3d19.416448641197597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9a5e9d0774d%3A0xa0dfd7a9f517ca9f!2sRaja%20Buffing%20Works!5e0!3m2!1sen!2sin!4v1763190567161!5m2!1sen!2sin"
                                 width="100%"
@@ -107,7 +109,7 @@ export default function Contact() {
                         </div>
 
                         {/* Contact Info */}
-                        <div className="bg-neutral p-6 rounded-lg shadow-2xl border border-logo">
+                        <div className="bg-neutral p-6 rounded-lg shadow-2xl border border-logo scroll-flip-left">
                             <h2 className="text-xl font-semibold mb-4 text-light">
                                 Contact Information
                             </h2>

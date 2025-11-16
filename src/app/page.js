@@ -6,6 +6,7 @@ import { IoMdSpeedometer } from "react-icons/io";
 import { GiCookingPot, GiSparkles, GiDiamondTrophy } from "react-icons/gi";
 import { MdRestaurant, MdDesignServices } from "react-icons/md";
 import { FaBoxes } from "react-icons/fa";
+import ScrollReveal from "./components/ScrollReveal";
 
 export const metadata = {
   title: "ASIF BUFFING WORKS - Expert Utensil Buffing & Polishing Services | Premium Quality",
@@ -246,6 +247,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-screen">
+        <ScrollReveal />
         <div className="absolute inset-0">
           <video
             src="/home.mp4"
@@ -256,7 +258,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-neutral opacity-60" />
         </div>
 
-        <div className="relative h-full flex items-center justify-center text-center">
+        <div className="relative h-full flex items-center justify-center text-center scroll-fade-up">
           <div className="px-4">
             <h1 className="text-white text-4xl md:text-6xl font-bold mb-4">
               ASIF BUFFING WORKS
@@ -272,13 +274,13 @@ export default function Home() {
       {/* About Us Section */}
       <section className="py-20 bg-base">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-logo">
+          <h2 className="text-3xl font-bold text-center mb-12 text-logo scroll-fade-down">
             About Us
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-2xl">
+              <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-2xl scroll-fade-left">
                 <Image
                   src="/about.webp"
                   alt="ASIF BUFFING WORKS factory worker operating professional buffing equipment"
@@ -289,7 +291,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6 scroll-fade-right">
               <p className="text-logo">
                 With years of expertise, ASIF BUFFING WORKS leads the
                 way in cutting-edge utensil buffing technology. Our advanced
@@ -298,7 +300,7 @@ export default function Home() {
               </p>
               <p className="text-logo">
                 Powered by a vast array of state-of-the-art machines, we offer
-                precision and perfection with every buff and press — truly
+                precision and perfection with every buff and press truly
                 Bringing the Shine Back.
               </p>
             </div>
@@ -309,7 +311,7 @@ export default function Home() {
       {/* Why Choose Us Section */}
       <section className="py-20 bg-neutral">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-accent">
+          <h2 className="text-3xl font-bold text-center mb-12 text-accent scroll-fade-down">
             Why Choose Us
           </h2>
 
@@ -338,7 +340,7 @@ export default function Home() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-base p-6 rounded-lg shadow-lg"
+                className="bg-base p-6 rounded-lg shadow-lg scroll-zoom-in"
               >
                 <div className="flex">{item.icon}</div>
                 <h3 className="text-xl font-semibold mb-2 text-logo">
@@ -354,7 +356,7 @@ export default function Home() {
       {/* Capabilities Section */}
       <section className="py-20 bg-base">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-logo">
+          <h2 className="text-3xl font-bold text-center mb-12 text-logo scroll-fade-down">
             Our Capabilities
           </h2>
 
@@ -379,7 +381,7 @@ export default function Home() {
             ].map((capability, index) => (
               <div
                 key={index}
-                className="bg-neutral border border-logo p-6 rounded-lg shadow-2xl"
+                className="bg-neutral border border-logo p-6 rounded-lg shadow-2xl scroll-zoom-in"
               >
                 {capability.icon}
                 <h3 className="text-xl font-semibold mb-2 text-accent">
@@ -395,7 +397,7 @@ export default function Home() {
       {/* Services Overview Section */}
       <section className="py-20 bg-neutral">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-accent">
+          <h2 className="text-3xl font-bold text-center mb-12 text-accent scroll-fade-down">
             Our Services
           </h2>
 
@@ -434,7 +436,7 @@ export default function Home() {
             ].map((service, index) => (
               <div
                 key={index}
-                className="bg-base p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                className="bg-base p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow scroll-zoom-in"
               >
                 {service.icon}
                 <h3 className="text-xl font-semibold mb-3 text-logo">
@@ -450,7 +452,7 @@ export default function Home() {
       {/* Catalogue Download Section */}
       <section className="h-[50vh] bg-neutral flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-base rounded-lg shadow-2xl p-8">
+          <div className="bg-base rounded-lg shadow-2xl p-8 scroll-zoom-out">
             <h2 className="text-2xl font-bold mb-4 text-logo">Download Our Catalogue</h2>
             <p className="text-l mb-8 text-logo">
               Get detailed information about our services

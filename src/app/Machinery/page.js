@@ -1,4 +1,5 @@
 import Breadcrumb from "../components/Breadcrumb";
+import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata = {
     title: "Our Machinery - ASIF BUFFING WORKS | Advanced Buffing Equipment",
@@ -79,6 +80,7 @@ export default function Machinery() {
 
     return (
         <div className="pt-24 pb-16 bg-base">
+            <ScrollReveal />
             {/* Video Schema */}
             <script
                 type="application/ld+json"
@@ -130,10 +132,10 @@ export default function Machinery() {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <Breadcrumb items={breadcrumbItems} />
-                <h1 className="text-3xl font-bold text-center mb-12 text-logo">
+                <h1 className="text-3xl font-bold text-center mb-12 text-logo scroll-fade-down">
                     Our Machinery
                 </h1>
-                <p className="text-center text-dark mb-12 max-w-2xl mx-auto">
+                <p className="text-center text-dark mb-12 max-w-2xl mx-auto scroll-fade-up">
                     Explore the cutting-edge machinery that powers ASIF BUFFING WORKS&apos; exceptional buffing and polishing services. Our state-of-the-art equipment ensures precision, efficiency, and superior results for every project.
                 </p>
 
@@ -141,7 +143,7 @@ export default function Machinery() {
                     {machines.map((machine) => (
                         <div
                             key={machine.id}
-                            className="bg-neutral rounded-lg shadow-2xl overflow-hidden hover:shadow-xl transition-shadow border border-logo"
+                            className="bg-neutral rounded-lg shadow-2xl overflow-hidden hover:shadow-xl transition-shadow border border-logo scroll-zoom-in"
                         >
                             {/* Video */}
                             <div className="relative w-full">

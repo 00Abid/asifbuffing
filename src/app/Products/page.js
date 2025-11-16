@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Breadcrumb from "../components/Breadcrumb";
+import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata = {
     title: "Our Products - ASIF BUFFING WORKS | Utensil Types We Service",
@@ -68,6 +69,7 @@ export default function Products() {
 
     return (
         <div className="pt-24 pb-16 bg-base">
+            <ScrollReveal />
             {/* Product Schema */}
             <script
                 type="application/ld+json"
@@ -131,10 +133,10 @@ export default function Products() {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <Breadcrumb items={breadcrumbItems} />
-                <h1 className="text-3xl font-bold text-center mb-12 text-logo">
+                <h1 className="text-3xl font-bold text-center mb-12 text-logo scroll-fade-down">
                     Our Products
                 </h1>
-                <p className="text-center text-dark mb-12 max-w-2xl mx-auto">
+                <p className="text-center text-dark mb-12 max-w-2xl mx-auto scroll-fade-up">
                     Discover the variety of utensils expertly buffed and polished by ASIF BUFFING WORKS. From everyday sauce pots to intricate silverware collections, we handle it all with precision and care.
                 </p>
 
@@ -142,7 +144,7 @@ export default function Products() {
                     {products.map((product) => (
                         <div
                             key={product.id}
-                            className="bg-neutral rounded-lg shadow-2xl overflow-hidden hover:shadow-xl transition-shadow border border-logo"
+                            className="bg-neutral rounded-lg shadow-2xl overflow-hidden hover:shadow-xl transition-shadow border border-logo scroll-zoom-in"
                         >
                             <div className="relative h-48">
                                 <Image

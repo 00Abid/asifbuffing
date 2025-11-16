@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
+import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata = {
     title: "Blog - ASIF BUFFING WORKS | Utensil Care Tips & Industry Insights",
@@ -369,6 +370,7 @@ export default function Blog() {
 
     return (
         <div className="pt-24 pb-16">
+            <ScrollReveal />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Breadcrumb Schema */}
                 <script
@@ -448,16 +450,16 @@ export default function Blog() {
                 />
 
                 <Breadcrumb items={breadcrumbItems} />
-                <h1 className="text-3xl font-bold text-center mb-12 text-logo">
+                <h1 className="text-3xl font-bold text-center mb-12 text-logo scroll-fade-down">
                     Our Blog
                 </h1>
-                <p className="text-center text-dark mb-12 max-w-2xl mx-auto">
+                <p className="text-center text-dark mb-12 max-w-2xl mx-auto scroll-fade-up">
                     Expert insights, tips, and industry knowledge from ASIF BUFFING WORKS
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {blogPosts.map((post, index) => (
-                        <article key={index} className="bg-neutral border border-accent rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <article key={index} className="bg-neutral border border-accent rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 scroll-zoom-in">
                             <div className="p-6">
                                 <h2 className="text-xl font-semibold mb-2 text-light">
                                     <Link href={post.link} className="hover:text-accent transition-colors duration-300">

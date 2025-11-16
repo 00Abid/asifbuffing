@@ -1,4 +1,5 @@
 import Breadcrumb from "../components/Breadcrumb";
+import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata = {
     title: "Customer Testimonials - ASIF BUFFING WORKS | Client Reviews & Success Stories",
@@ -61,6 +62,7 @@ export default function Testimonials() {
 
     return (
         <div className="pt-24 pb-16">
+            <ScrollReveal />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Review Schema JSON-LD */}
                 <script
@@ -124,16 +126,16 @@ export default function Testimonials() {
                 />
 
                 <Breadcrumb items={breadcrumbItems} />
-                <h1 className="text-3xl font-bold text-center mb-12 text-logo">
+                <h1 className="text-3xl font-bold text-center mb-12 text-logo scroll-fade-down">
                     Customer Testimonials
                 </h1>
-                <p className="text-center text-dark mb-12 max-w-2xl mx-auto">
+                <p className="text-center text-dark mb-12 max-w-2xl mx-auto scroll-fade-up">
                     Don&apos;t just take our word for it. Here&apos;s what our satisfied customers have to say about our professional buffing and polishing services.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {testimonials.map((testimonial, index) => (
-                        <div key={index} className="bg-neutral border border-accent rounded-lg shadow-lg p-6">
+                        <div key={index} className="bg-neutral border border-accent rounded-lg shadow-lg p-6 scroll-zoom-in">
                             <div className="flex mb-4">
                                 {[...Array(testimonial.rating)].map((_, i) => (
                                     <span key={i} className="text-yellow-400 text-lg">★</span>

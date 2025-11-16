@@ -21,7 +21,7 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="bg-base-secondary shadow-sm fixed w-full z-50">
+        <nav className="bg-base-secondary shadow-sm fixed w-full z-[1000]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
                     {/* Logo */}
@@ -72,7 +72,7 @@ export default function Navbar() {
                 className={`sm:hidden overflow-hidden transition-all duration-300 ${isOpen ? "max-h-full opacity-100" : "max-h-0 opacity-0"
                     }`}
             >
-                <div className="px-2 pt-2 pb-3 space-y-1 bg-base-secondary border-t border-accent animate-slideDown">
+                <div className="px-2 pt-2 pb-3 space-y-1 bg-base-secondary border-t border-accent">
                     {links.map((link) => (
                         <Link
                             key={link.href}

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { IoMdSend } from "react-icons/io";
+import ScrollReveal from "./ScrollReveal";
 
 export default function Form() {
     const [name, setName] = useState("");
@@ -28,11 +29,12 @@ ${message}`;
 
     return (
         <div className="bg-neutral p-8 rounded-lg shadow-2xl border border-logo">
+            <ScrollReveal />
             <h2 className="text-2xl font-semibold text-light mb-6">
                 Send us a Message
             </h2>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 scroll-fade-up">
 
                 <div>
                     <label className="block text-sm font-medium text-light">

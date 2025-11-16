@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Logo + About */}
           <div>
             <div className="flex items-center mb-4 space-x-2">
-              <div className="relative">
+              <div className="scroll-fade-down relative">
                 <Image
                   src="/logo.webp"
                   alt="ASIF BUFFING WORKS - Professional Utensil Buffing Services Logo"
@@ -20,14 +20,14 @@ export default function Footer() {
                 />
               </div>
             </div>
-            <p className="text-dark">
+            <p className="text-dark scroll-fade-up">
               Bringing the Shine Back <br /> 
               Matte Specialist in Vasai
             </p>
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="scroll-fade-right">
             <h3 className="mb-4 text-lg font-semibold text-logo">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="/" className="text-dark hover:text-logo">Home</Link></li>
@@ -41,7 +41,7 @@ export default function Footer() {
 
 
           {/* Hours */}
-          <div>
+          <div className="scroll-fade-right">
             <h3 className="mb-4 text-lg font-semibold text-logo">Hours</h3>
             <div className="space-y-2 text-dark">
               <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
