@@ -1,6 +1,6 @@
 # ASIF BUFFING WORKS
 
-Professional utensil buffing and polishing services website built with Next.js 14, featuring enterprise-level SEO optimization and comprehensive structured data markup.
+Professional utensil buffing and polishing services website built with Next.js 16, featuring enterprise-level SEO optimization and comprehensive structured data markup.
 
 ## 🚀 Features
 
