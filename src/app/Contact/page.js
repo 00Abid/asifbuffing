@@ -122,7 +122,7 @@ export default function Contact() {
 
                                 <p className="flex items-center text-light">
                                     <FaEnvelope className="mr-2 text-light" size={18} />
-                                    rajabuffingworks00@gmail.com
+                                    rajabuffingworks02@gmail.com
                                 </p>
 
                                 <p className="flex items-start text-light">
