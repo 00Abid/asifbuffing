@@ -6,7 +6,7 @@ export const metadata = {
     description: "Read testimonials from satisfied customers who trust ASIF BUFFING WORKS for their utensil buffing and polishing needs. Rated 4.9/5 stars by 200+ customers.",
     keywords: "ASIF BUFFING WORKS reviews, customer testimonials, utensil buffing ratings, polishing service reviews, buffing testimonials",
     alternates: {
-        canonical: 'https://asifbuffingworks.com/Testimonials',
+        canonical: 'https://asifbuffing.vercel.app/Testimonials',
     },
 };
 

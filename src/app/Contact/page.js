@@ -58,7 +58,7 @@ export default function Contact() {
                             "logo": "https://asifbuffing.vercel.app/logo.webp",
                             "contactPoint": {
                                 "@type": "ContactPoint",
-                                "telephone": "+91-XXXXXXXXXX",
+                                "telephone": "+91-9096769473",
                                 "contactType": "Customer Service",
                                 "email": "rajabuffingworks02@gmail.com",
                                 "areaServed": "IN",

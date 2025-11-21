@@ -56,7 +56,7 @@ export default function Home() {
             "image": "https://asifbuffing.vercel.app/logo.webp",
             "@id": "https://asifbuffing.vercel.app",
             "url": "https://asifbuffing.vercel.app",
-            "telephone": "+91-XXXXXXXXXX",
+            "telephone": "+91-9096769473",
             "priceRange": "$$",
             "address": {
               "@type": "PostalAddress",
@@ -166,7 +166,7 @@ export default function Home() {
               "@type": "LocalBusiness",
               "name": "ASIF BUFFING WORKS",
               "image": "https://asifbuffing.vercel.app/logo.webp",
-              "telephone": "+91-XXXXXXXXXX",
+              "telephone": "+91-9096769473",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Vasai East",
